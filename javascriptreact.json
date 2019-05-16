@@ -9,33 +9,8 @@
         "prefix": "imrncig",
         "body": [            
             "import React, { Component } from \"react\";",
-            "import { \n\tView,\n\tText,\n\tStyleSheet\n} from \"react-native\";",
-            "//Library",
-            "//import * from \"rn\";",
-            "\n//const",
-            "//import * from \"./constant\";",
-            "\n//style",         
-            "//import DEFAULT_COLOR from \"./color\";",            
-            "import mainStyle from \"./styles/styles\";",            
-            "\nclass ${1:componentName} extends Component {",
-            "\tconstructor(props) {",
-            "\t\tsuper(props);",
-            "\t\tthis.state = {",
-            "\t\t\t//****** data *******/",
-            "\t\t\t//condition: false,",
-            "\t\t\t//data: null,",
-            "\t\t\t//array: [],",
-            "\t\t\t//json: {",
-            "\t\t\t\t//data: null,",
-            "\t\t\t\t//data: null,",
-            "\t\t\t//},",
-            "\t\t};",
-            "\t}",
-            "\n\tcomponentDidMount() {",
-            "\t\t//this.setState({",
-            "\t\t\t//data: null,",
-            "\t\t//});",
-            "\t}",
+            "import { \n\tView,\n\tText,\n\tStyleSheet\n} from \"react-native\";",                        
+            "\nclass ${1:componentName} extends Component {",            
             "\n\trender() {",
             "\t\treturn (",
             "\t\t\t<View style={[mainStyle.container, mainStyle.middleCenter]}>",
@@ -75,6 +50,61 @@
         ],
         "description": "React Component"
     },
+    "Import React Native Library": {
+        "prefix": "imrnlib",
+        "body": [
+            "//Library",
+            "//import * from \"rn\";"
+        ],
+        "description": "Import React Native Library"
+    },
+    "Import React Native constant.js file": {
+        "prefix": "imrnconst",
+        "body": [
+            "\n//const",
+            "//import * from \"./constant\";"
+        ],
+        "description": "Import React Native constant.js file"
+    },
+    "Import React Native styles.js file": {
+        "prefix": "imrnstyles",
+        "body": [
+            "\n//style",         
+            "//import DEFAULT_COLOR from \"./color\";",            
+            "import mainStyle from \"./styles/styles\";"
+        ],
+        "description": "Import React Native styles.js file"
+    },
+    "Create React Native state": {
+        "prefix": "imrnstate",
+        "body": [
+            "\tconstructor(props) {",
+                "\t\tsuper(props);",
+                "\t\tthis.state = {",
+                "\t\t\t//****** data *******/",
+                "\t\t\t//condition: false,",
+                "\t\t\t//data: null,",
+                "\t\t\t//array: [],",
+                "\t\t\t//json: {",
+                "\t\t\t\t//data: null,",
+                "\t\t\t\t//data: null,",
+                "\t\t\t//},",
+                "\t\t};",
+                "\t}"
+        ],
+        "description": "Create React Native state"
+    },
+    "Create React Native componentDidMount": {
+        "prefix": "imrncdm",
+        "body": [
+            "\n\tcomponentDidMount() {",
+                "\t\t//this.setState({",
+                "\t\t\t//data: null,",
+                "\t\t//});",
+                "\t}"
+        ],
+        "description": "Create React Native componentDidMount"
+    },
     "Create StyleSheet": {
         "prefix": "imrnss",
         "body": [
@@ -90,21 +120,6 @@
             "console.log(${1:})"
         ],
         "description": "console.log"
-    },
-    "React Native Pan Responder": {
-        "prefix": "imrnp",
-        "body": [
-            "this.panResponder = PanResponder.create({",
-            "\n\tonMoveShouldSetPanResponder: (evt, gestureState) => true,",
-            "\tonPanResponderGrant: (evt, gestureState) =>{",
-            "\n\t},",
-            "\tonPanResponderMove: (evt, gestureState) => {",
-            "\n\t},",
-            "\tonPanResponderRelease: (evt, gestureState) => {",
-            "\n\t},",
-            "\n})"
-        ],
-        "description": "React Native Pan Responder"
     },
     "React Native Functional Component": {
         "prefix": "imrnfc",
