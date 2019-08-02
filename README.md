@@ -1,6 +1,6 @@
-# Custom React Native Snippets
+# VSCode React Native Snippets
 
-This repository contains few of the snippets that i use in my react native
+This repository contains few of the custom snippets that i use in my react native development using vscode 
 
 ## Setup Instructions (VSCODE)
 
