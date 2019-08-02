@@ -1,188 +1,294 @@
 {
-    /*
+  /*
 	// Place your snippets for JavaScript React here. Each snippet is defined under a snippet name and has a prefix, body and 
 	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
 	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
     // same ids are connected.
     
-*/ "Ikhwan Ghani React Native Component": {
-        "prefix": "imrncig",
-        "body": [            
-            "import React, { Component } from \"react\";",
-            "import { \n\tView,\n\tText,\n\tStyleSheet\n} from \"react-native\";",                        
-            "\nclass ${1:componentName} extends Component {",            
-            "\n\trender() {",
-            "\t\treturn (",
-            "\t\t\t<View style={[mainStyle.container, mainStyle.middleCenter]}>",
-            "\t\t\t\t<Text style={[mainStyle.display4]}>${1:componentName}</Text>",
-            "\t\t\t</View>",
-            "\t\t);",
-            "\t}",
-            "}",
-            "export default ${1:componentName};",
-            "\nconst styles = StyleSheet.create({",
-            "});"
-        ],
-        "description": "React Component"
-    },
-    "React Native Component": {
-        "prefix": "imrnc",
-        "body": [
-            "import React, { Component } from \"react\";",
-            "import { \n\tView,\n\tText,\n\tStyleSheet\n} from \"react-native\";",
-            "\nclass ${1:componentName} extends Component {",
-            "\trender() {",
-            "\t\treturn (",
-            "\t\t\t<View style={styles.container}>",
-            "\t\t\t\t<Text>${1:componentName}</Text>",
-            "\t\t\t</View>",
-            "\t\t);",
-            "\t}",
-            "}",
-            "export default ${1:componentName};",
-            "\nconst styles = StyleSheet.create({",
-            "\tcontainer: {",
-            "\t\tflex: 1,",
-            "\t\talignItems: 'center',",
-            "\t\tjustifyContent: 'center'",
-            "\t}",
-            "});"
-        ],
-        "description": "React Component"
-    },
-    "Import React Native Library": {
-        "prefix": "imrnlib",
-        "body": [
-            "//Library",
-            "//import * from \"rn\";"
-        ],
-        "description": "Import React Native Library"
-    },
-    "Import React Native constant.js file": {
-        "prefix": "imrnconst",
-        "body": [
-            "\n//const",
-            "//import * from \"./constant\";"
-        ],
-        "description": "Import React Native constant.js file"
-    },
-    "Import React Native styles.js file": {
-        "prefix": "imrnstyles",
-        "body": [
-            "\n//style",         
-            "//import DEFAULT_COLOR from \"./color\";",            
-            "import mainStyle from \"./styles/styles\";"
-        ],
-        "description": "Import React Native styles.js file"
-    },
-    "Create React Native state": {
-        "prefix": "imrnstate",
-        "body": [
-            "\tconstructor(props) {",
-                "\t\tsuper(props);",
-                "\t\tthis.state = {",
-                "\t\t\t//****** data *******/",
-                "\t\t\t//condition: false,",
-                "\t\t\t//data: null,",
-                "\t\t\t//array: [],",
-                "\t\t\t//json: {",
-                "\t\t\t\t//data: null,",
-                "\t\t\t\t//data: null,",
-                "\t\t\t//},",
-                "\t\t};",
-                "\t}"
-        ],
-        "description": "Create React Native state"
-    },
-    "Create React Native componentDidMount": {
-        "prefix": "imrncdm",
-        "body": [
-            "\n\tcomponentDidMount() {",
-                "\t\t//this.setState({",
-                "\t\t\t//data: null,",
-                "\t\t//});",
-                "\t}"
-        ],
-        "description": "Create React Native componentDidMount"
-    },
-    "Create StyleSheet": {
-        "prefix": "imrnss",
-        "body": [
-            "const styles = StyleSheet.create({",
-            "\n$0",
-            "\n});\n"
-        ],
-        "description": "Const Styles"
-    },
-    "console.log": {
-        "prefix": "clog",
-        "body": [
-            "console.log(${1:})"
-        ],
-        "description": "console.log"
-    },
-    "React Native Functional Component": {
-        "prefix": "imrnfc",
-        "body": [
-            "import React from \"react\";",
-            "import { \n\tView,\n\tText,\n\tStyleSheet\n} from \"react-native\";",
-            "\nconst ${1:componentName} = (props) => (",
-            "\t<View style={styles.container}>",
-            "\t\t<Text>${1:componentName}</Text>",
-            "\t</View>",
-            "\t)",
-            "export default ${1:componentName};",
-            "\nconst styles = StyleSheet.create({",
-            "\tcontainer: {",
-            "\t\tflex: 1,",
-            "\t\talignItems: 'center',",
-            "\t\tjustifyContent: 'center'",
-            "\t}",
-            "});"
-        ],
-        "description": "React Native Functional Component"
-    },
-    "React Native Map Function": {
-        "prefix": "rnmap",
-        "body": [
-            "return ${1:items}.map((item,index)=>{",
-            "\treturn(",
-            "\t\t${2:<View></View>}",
-            ")})"
-        ],
-        "description": "javscript map method"
-    },
-    "React Native Dimensions": {
-		"prefix": "rndimen",
-		"body": [
-			"const {width,height} = Dimensions.get('window')"
-		],
-		"description": "Dimensions RN"
-	},
-	"React Native Component Only":{
-		"prefix":"rncomp",
-		"body":[
-			"\nclass ${1:componentName} extends Component{",
-				"\trender(){",
-				"\t\treturn (",
-				"\t\t\t<View style={{flex:1,alignItems:'center',justifyContent:'center'}}>",
-				"\t\t\t\t<Text>${1:componentName}</Text>",
-				"\t\t\t</View>",
-				"\t\t);",
-				"\t}",
-				"}"
-		],
-		"description":"New React Native Component"
-    },
-    "React Native Functional Component Only":{
-		"prefix":"rnfcomp",
-		"body":[
-			"\nconst ${1:componentName} = (props) => (",
-			"\t<View style={{flex:1,alignItems:'center',justifyContent:'center'}}>",
-			"\t\t<Text>${1:componentName}</Text>",
-			"\t</View>",
-			")"
-		],
-		"description":"New React Native Component"
-	}
+*/ "React Native Default Code": {
+    "prefix": "rn",
+    "body": [
+      "import React, { Component } from \"react\";",
+      "import {",
+      "\tView,",
+      "\tText,",
+      "\tStyleSheet,",
+      "\tScrollView,",
+      "\tButton",
+      "} from \"react-native\";",
+      "\n//style",
+      "//import DEFAULT_COLOR from \"./color\";",
+      "import mainStyle from \"./styles/styles\";",
+      "\nclass ${1:componentName} extends Component {",
+      "\trender() {",
+      "\t\treturn (",
+      "\t\t\t<View style={[${2:mainStyle.container}, ${3:mainStyle.middleCenter}]}>",
+      "\t\t\t\t<Text style={[mainStyle.text, ${4:mainStyle.caption}]}>${1:componentName}</Text>",
+      "\t\t\t</View>",
+      "\t\t);",
+      "\t}",
+      "}",
+      "export default ${1:componentName};"
+    ],
+    "description": "Create React Native Default Code"
+  },
+  "React Native with React Navigation (App.js)": {
+    "prefix": "rnavi",
+    "body": [
+      "import React, { Component } from \"react\";",
+      "import {",
+      "\tView,",
+      "\tText,",
+      "\tStyleSheet,",
+      "\tScrollView,",
+      "} from \"react-native\";",
+      "//https://reactnavigation.org/en/",
+      "import { ",
+      "\t${1:createSwitchNavigator},",
+      "\t${2:createAppContainer},",
+      "\t${3:createDrawerNavigator},",
+      "\t${4:createBottomTabNavigator},",
+      "\t${5:createStackNavigator}",
+      "} from \"react-navigation\";",
+      "\nexport default class App extends Component {",
+      "\trender() {",
+      "\t\treturn <AppContainer />;",
+      "\t}",
+      "}",
+      "\nclass ${9:LoginScreen} extends Component {",
+      "\trender() {",
+      "\t\treturn (",
+      "\t\t\t<ScrollView>",
+      "\t\t\t\t<View style={[mainStyle.container, mainStyle.middleCenter]}>",
+      "\t\t\t\t\t<Text style={[mainStyle.text, mainStyle.caption]}>${9:LoginScreen}</Text>",
+      "\t\t\t\t</View>",
+      "\t\t\t</ScrollView>",
+      "\t\t);",
+      "\t}",
+      "}",
+      "\nconst ${6:AppSwitchNavigator} = ${7:createSwitchNavigator}({",
+      "\t\t${8:Login}: { screen: ${9:LoginScreen} }",
+      "});",
+      "\nconst AppContainer = createAppContainer(${6:AppSwitchNavigator});"
+    ],
+    "description": "Create React Native with React Navigation (App.js)"
+  },
+  "React Native with React Navigation (CreateDrawerNavigator)": {
+    "prefix": "rnaviDrawerNavigator",
+    "body": [
+      "//https://reactnavigation.org/en/",
+      "import { ",
+      "\tcreateDrawerNavigator",
+      "} from \"react-navigation\";",
+      "\nimport ${2:DashboardTabNavigator} from \"${3:path}\";",
+      "\nconst AppDrawerNavigator = createDrawerNavigator(",
+      "\t{",
+      "\t\t${1:Dashboard}: {",
+      "\t\t\tscreen: ${2:DashboardTabNavigator},",
+      "\t\t\tnavigationOptions: ({ navigation }) => {",
+      "\t\t\t\treturn {",
+      "\t\t\t\t\ttitle: \"${4:Dashboard Drawer}\"",
+      "\t\t\t\t};",
+      "\t\t\t}",
+      "\t\t}",
+      "\t},",
+      ");",
+      "\nexport default AppDrawerNavigator;"
+    ],
+    "description": "Create React Native with React Navigation (CreateDrawerNavigator)"
+  },
+  "React Native with React Navigation (createBottomTabNavigator)": {
+    "prefix": "rnaviBottomTabNavigator",
+    "body": [
+      "//https://reactnavigation.org/en/",
+      "import { ",
+      "\tcreateBottomTabNavigator",
+      "} from \"react-navigation\";",
+      "\nimport ${2:FeedStackNavigator} from \"${3:path}\";",
+      "\nconst DashboardTabNavigator = createBottomTabNavigator(",
+      "\t{",
+      "\t\t${1:FeedStack}: {",
+      "\t\t\tscreen: ${2:FeedStackNavigator},",
+      "\t\t\tnavigationOptions: ({ navigation }) => {",
+      "\t\t\t\treturn {",
+      "\t\t\t\t\ttitle: \"${4:Feed}\"",
+      "\t\t\t\t};",
+      "\t\t\t}",
+      "\t\t}",
+      "\t},",
+      ");",
+      "\nexport default DashboardTabNavigator;"
+    ],
+    "description": "Create React Native with React Navigation (createBottomTabNavigator)"
+  },
+  "React Native with React Navigation (createStackNavigator)": {
+    "prefix": "rnaviStackNavigator",
+    "body": [
+      "import React, { Component } from \"react\";",
+      "//https://reactnavigation.org/en/",
+      "import { ",
+      "\tcreateStackNavigator",
+      "} from \"react-navigation\";",
+      "\nimport ${2:FeedScreen} from \"${3:path}\";",
+      "\nconst FeedStackNavigator = createStackNavigator(",
+      "\t{",
+      "\t\t${1:Feed}: {",
+      "\t\t\tscreen: ${2:FeedScreen},",
+      "\t\t\tnavigationOptions: ({ navigation }) => {",
+      "\t\t\t\treturn {",
+      "\t\t\t\t\theaderTitle: \"${4:Feed}\",",
+      "\t\t\t\t\theaderLeft: (",
+      "\t\t\t\t\t\t<Icon",
+      "\t\t\t\t\t\t\tstyle={{ paddingLeft: 10 }}",
+      "\t\t\t\t\t\t\tonPress={() => navigation.openDrawer()}",
+      "\t\t\t\t\t\t\tname=\"md-menu\"",
+      "\t\t\t\t\t\t\tsize={30}",
+      "\t\t\t\t\t\t/>",
+      "\t\t\t\t\t)",
+      "\t\t\t\t};",
+      "\t\t\t}",
+      "\t\t}",
+      "\t},",
+      "\t{",
+      "\t\tdefaultNavigationOptions: {",
+      "\t\t\tgestureEnabled: false",
+      "\t\t}",
+      "\t}",
+      ");",
+      "//below are the code for hiding tabNavigator from all child of parent screen",
+      "FeedStackNavigator.navigationOptions = ({ navigation }) => {",
+      "\tlet tabBarVisible = true;",
+      "\tif (navigation.state.index > 0) {",
+      "\t\ttabBarVisible = false;",
+      "\t}",
+      "\treturn {",
+      "\t\ttabBarVisible",
+      "\t};",
+      "};",
+      "\nexport default FeedStackNavigator;"
+    ],
+    "description": "Create React Native with React Navigation (createBottomTabNavigator)"
+  },
+  "Import React Navigation": {
+    "prefix": "imrnavigation",
+    "body": [
+      "//https://reactnavigation.org/en/",
+      "import { ",
+      "\t${1:createSwitchNavigator},",
+      "\t${2:createAppContainer},",
+      "\t${3:createDrawerNavigator},",
+      "\t${4:createBottomTabNavigator},",
+      "\t${5:createStackNavigator}",
+      "} from \"react-navigation\";"
+    ],
+    "description": "Import React Navigation"
+  },
+  "Import React Native Vector Icons": {
+    "prefix": "imrnvicons",
+    "body": [
+      "//https://github.com/oblador/react-native-vector-icons & https://oblador.github.io/react-native-vector-icons/",
+      "import ${1:Icon} from \"react-native-vector-icons/${2:Ionicons}\";"
+    ],
+    "description": "Import React Native Vector Icons"
+  },
+  "Import React Native constant.js file": {
+    "prefix": "imrnconst",
+    "body": ["\n//const", "//import * from \"./constant\";"],
+    "description": "Import React Native constant.js file"
+  },
+  "Import React Native styles.js file": {
+    "prefix": "imrnstyles",
+    "body": [
+      "\n//styles",
+      "//import DEFAULT_COLOR from \"./color\";",
+      "import mainStyle from \"./styles/styles\";"
+    ],
+    "description": "Import React Native styles.js file"
+  },
+  "React Native Dimensions": {
+    "prefix": "rndimen",
+    "body": ["const {width,height} = Dimensions.get('window')"],
+    "description": "Create React Native Dimensions"
+  },
+  "React Native state": {
+    "prefix": "rnstate",
+    "body": [
+      "\tconstructor(props) {",
+      "\t\tsuper(props);",
+      "\t\tthis.state = {",
+      "\t\t\t//****** data *******/",
+      "\t\t\t//condition: false,",
+      "\t\t\t//array: [],",
+      "\t\t\t//json: {",
+      "\t\t\t\t//data: null,",
+      "\t\t\t\t//data: null,",
+      "\t\t\t//},",
+      "\t\t\tdata: null,",
+      "\t\t};",
+      "\t}"
+    ],
+    "description": "Create React Native state"
+  },
+  "React Native componentDidMount": {
+    "prefix": "rncdm",
+    "body": [
+      "\n\tcomponentDidMount() {",
+      "\t\tthis.setState({",
+      "\t\t\tdata: null,",
+      "\t\t});",
+      "\t}"
+    ],
+    "description": "Create React Native componentDidMount"
+  },
+  "React Native Class Component": {
+    "prefix": "rncomp",
+    "body": [
+      "\nclass ${1:componentName} extends Component {",
+      "\trender() {",
+      "\t\treturn (",
+      "\t\t\t<View style={[${2:mainStyle.container}, ${3:mainStyle.middleCenter}]}>",
+      "\t\t\t\t<Text style={[mainStyle.text, ${4:mainStyle.caption}]}>${1:componentName}</Text>",
+      "\t\t\t</View>",
+      "\t\t);",
+      "\t}",
+      "}"
+    ],
+    "description": "Create React Native Class Component"
+  },
+  "React Native Functional Component": {
+    "prefix": "rnfcomp",
+    "body": [
+      "\nconst ${1:componentName} = (props) => (",
+      "\t<View style={[${2:mainStyle.container}, ${3:mainStyle.middleCenter}]}>",
+      "\t\t<Text style={[mainStyle.text, ${4:mainStyle.caption}]}>${1:componentName}</Text>",
+      "\t</View>",
+      ")"
+    ],
+    "description": "Create React Native Functional Component"
+  },
+  "React Native StyleSheet": {
+    "prefix": "rnss",
+    "body": [
+      "\nconst styles = StyleSheet.create({",
+      "\tcontainer: {",
+      "\t\tflex: 1,",
+      "\t\talignItems: 'center',",
+      "\t\tjustifyContent: 'center'",
+      "\t}",
+      "});"
+    ],
+    "description": "Create React Native StyleSheet"
+  },
+  "console.log": {
+    "prefix": "clog",
+    "body": ["console.log(${1:})"],
+    "description": "console.log"
+  },
+  "JSON console.log": {
+    "prefix": "clogJSON",
+    "body": [
+      "console.log(`[${1:title name}] ${2:item}: ${JSON.stringify(${2:item}, null, \"   \")}`)"
+    ],
+    "description": "JSON console.log"
+  }
 }

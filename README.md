@@ -1,6 +1,6 @@
-# Custom React Native Snippets
+# VSCode React Native Snippets
 
-This repository contains few of the snippets that i use in my react native
+This repository contains few of the custom snippets that i use in my react native development using vscode
 
 ## Setup Instructions (VSCODE)
 
@@ -20,19 +20,23 @@ This repository contains few of the snippets that i use in my react native
 
 ```sh
 
-(from Unsure Programmer )
-imrnc  - Import React Native Component
-imrnfc - Import React Native Functional Component
-imrnp -  Create Panresponder.create
-imrnss - Create React Native Style Sheet
-clog   - console.log("$1")
-rnmap  - React Native Map Method
-rndime - const {width,height} = Dimensions.get('window')
-rncomp - Create a React Native Component
-rnfcomp  - Create a Functional React Native Component
-
-(mySnippet)
-imrncig  - Import React Native Component Ikhwan Ghani
+rn  - Create React Native Default Code
+rnavi  - Create React Native with React Navigation (App.js)
+rnaviDrawerNavigator - Create React Native with React Navigation (CreateDrawerNavigator)
+rnaviBottomTabNavigator -  Create React Native with React Navigation (createBottomTabNavigator)
+rnaviStackNavigator - Create React Native with React Navigation (createBottomTabNavigator)
+imrnavigation - Import React Navigation
+imrnvicons - Import React Native Vector Icons
+imrnconst - Import React Native constant.js file
+imrnstyles - Import React Native styles.js file
+rndimen - Create React Native Dimensions
+rnstate - Create React Native state
+rncdm - Create React Native componentDidMount
+rncomp - Create React Native Class Component
+rnfcomp - Create React Native Functional Component
+rnss - Create React Native StyleSheet
+clog   - console.log
+clogJSON   - JSON console.log
 
 ```
 
@@ -46,6 +50,8 @@ rnajc - alignItems:'center',justifyContent:'center'
 ## jsx.json -> JSX Snippets
 
 ```sh
-(from Unsure Programmer )
-<but - <Button title='${1:title}' onPress={()=>${2:alert('button pressed')}}/>
+<Button - <Button title='${1:title}' onPress={()=>${2:this.props.navigation.navigate(\"Screen\")}}/>
+<View - <View style={[${1:mainStyle.container}, ${2:mainStyle.middleCenter}]}></View>
+<Text - <Text style={[${1:mainStyle.text}, ${2:mainStyle.caption}]}>${3:componentName}</Text>
+<Icon - <Icon name='${1:md-menu}' size={${2:30}}/>
 ```
